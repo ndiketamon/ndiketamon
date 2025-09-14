@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Paradise 🐶</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic CSS for responsiveness */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+        }
+        header {
+            background-color: #ffebc6;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 1.2em;
+        }
+        .puppy-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .puppy-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 200px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .puppy-card:hover {
+            transform: translateY(-5px);
+        }
+        .puppy-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #ffebc6;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        /* Responsive for small screens */
+        @media (max-width: 600px) {
+            .puppy-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Puppy Paradise 🐶</h1>
+        <p>Find your perfect Yorkie or Maltese puppy!</p>
+    </header>
+
+    <section class="puppy-gallery">
+        <div class="puppy-card">
+            <img src="images/yorkie1.jpg" alt="Yorkie Puppy">
+            <h2>Yorkie Puppy</h2>
+            <p>Adorable and playful, ready for adoption.</p>
+        </div>
+        <div class="puppy-card">
+            <img src="images/maltese1.jpg" alt="Maltese Puppy">
+            <h2>Maltese Puppy</h2>
+            <p>Sweet and friendly, looking for a loving home.</p>
+        </div>
+        <!-- Add more puppy cards here -->
+    </section>
+
+    <footer>
+        <p>Contact us to adopt your puppy! ❤</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
